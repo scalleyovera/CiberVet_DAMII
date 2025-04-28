@@ -6,24 +6,37 @@
 //
 
 import UIKit
+import FSCalendar
 
 class ControlMascotaViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var calendar: FSCalendar!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        calendar.dataSource = self
+        calendar.delegate = self
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
 
 }
+extension ControlMascotaViewController : FSCalendarDataSource {
+    
+}
+
+extension ControlMascotaViewController : FSCalendarDelegate{
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        let dateFormatter = ISO8601DateFormatter()
+        let selectedDate = date
+        let formattedDate = dateFormatter.string(from: selectedDate)
+        print("\(formattedDate)")
+    }
+}
+    
+
+
+

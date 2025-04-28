@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F3306692DBF4A5D006EFF1A /* ControlMascotaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F3306682DBF4A5D006EFF1A /* ControlMascotaViewController.xib */; };
+		8F33066A2DBF4A5D006EFF1A /* ControlMascotaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3306672DBF4A5D006EFF1A /* ControlMascotaViewController.swift */; };
 		8FF7DDA02DBF2854005B0A12 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 8FF7DD9F2DBF2854005B0A12 /* FSCalendar */; };
 		D35A99B72DBDA7EC00D5CE7E /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35A99B62DBDA7EC00D5CE7E /* RegistroViewController.swift */; };
 		D3A1C6A32DBD72E1007A934D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A1C6A22DBD72E1007A934D /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F3306672DBF4A5D006EFF1A /* ControlMascotaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlMascotaViewController.swift; sourceTree = "<group>"; };
+		8F3306682DBF4A5D006EFF1A /* ControlMascotaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlMascotaViewController.xib; sourceTree = "<group>"; };
 		D35A99B62DBDA7EC00D5CE7E /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		D3A1C69F2DBD72E1007A934D /* CiberVet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiberVet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A1C6A22DBD72E1007A934D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				D3A1C6A42DBD72E1007A934D /* SceneDelegate.swift */,
 				D3A1C6A62DBD72E1007A934D /* ViewController.swift */,
 				D3A1C6A82DBD72E1007A934D /* Main.storyboard */,
+				8F3306672DBF4A5D006EFF1A /* ControlMascotaViewController.swift */,
+				8F3306682DBF4A5D006EFF1A /* ControlMascotaViewController.xib */,
 				D3A1C6AB2DBD72E5007A934D /* Assets.xcassets */,
 				D3A1C6AD2DBD72E5007A934D /* LaunchScreen.storyboard */,
 				D3A1C6B02DBD72E5007A934D /* Info.plist */,
@@ -256,6 +262,7 @@
 			files = (
 				D3A1C6AF2DBD72E5007A934D /* LaunchScreen.storyboard in Resources */,
 				D3A1C6AC2DBD72E5007A934D /* Assets.xcassets in Resources */,
+				8F3306692DBF4A5D006EFF1A /* ControlMascotaViewController.xib in Resources */,
 				D3A1C6AA2DBD72E1007A934D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3E138472DBDF418004959B8 /* MascotaTableViewCell.swift in Sources */,
+				8F33066A2DBF4A5D006EFF1A /* ControlMascotaViewController.swift in Sources */,
 				D3E1384E2DBDFF0B004959B8 /* MascotaCD+CoreDataProperties.swift in Sources */,
 				D3E138452DBDE3F0004959B8 /* HomeViewController.swift in Sources */,
 				D3A1C6A72DBD72E1007A934D /* ViewController.swift in Sources */,
