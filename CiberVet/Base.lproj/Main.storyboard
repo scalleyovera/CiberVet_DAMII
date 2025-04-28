@@ -293,8 +293,126 @@
                     <view key="view" contentMode="scaleToFill" id="4Nr-2O-SgM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CiberVet Tips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vB1-Vc-MDo">
+                                <rect key="frame" x="20" y="30" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="j6I-zR-oeW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijX-CK-YxG">
+                                <rect key="frame" x="20" y="90" width="353" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note.text" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fLn-87-a1H">
+                                        <rect key="frame" x="0.0" y="1.6666666666666643" width="40" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="cHV-VT-S1b"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip del dia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLN-wP-K2D">
+                                        <rect key="frame" x="40" y="0.0" width="313" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GJp-1K-M9T"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Recuerda usar juguetes seguros y no darle huesos a tu mascota." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dIk-eE-tAF">
+                                <rect key="frame" x="20" y="140" width="353" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UOI-wY-Yde"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtI-ZN-NSQ">
+                                <rect key="frame" x="20" y="220" width="353" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark.folder.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SNt-gO-ShI">
+                                        <rect key="frame" x="0.0" y="1.6666666666666643" width="40" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="mCW-Cl-48i"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preguntas frecuentes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZc-f9-N7w">
+                                        <rect key="frame" x="40" y="0.0" width="313" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dYP-H3-lUf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="fY0-Qh-jYx"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bKy-K7-N48">
+                                <rect key="frame" x="0.0" y="280" width="393" height="333"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No encuentras tu pregunta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cd-Pu-NgP">
+                                <rect key="frame" x="20" y="623" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DBt-Jq-CCy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresa tu pregunta y la responderemos!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebf-bN-2if">
+                                <rect key="frame" x="20" y="673" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mGV-XR-OL0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oF-ar-Eaa">
+                                <rect key="frame" x="20" y="733" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ukG-Fb-lu8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="oGT-60-dbw"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ijX-CK-YxG" firstAttribute="leading" secondItem="oGT-60-dbw" secondAttribute="leading" constant="20" id="0AA-ae-jbm"/>
+                            <constraint firstItem="8cd-Pu-NgP" firstAttribute="top" secondItem="bKy-K7-N48" secondAttribute="bottom" constant="10" id="1kk-0G-mhd"/>
+                            <constraint firstItem="oGT-60-dbw" firstAttribute="bottom" secondItem="6oF-ar-Eaa" secondAttribute="bottom" constant="20" id="5Gs-b0-BZM"/>
+                            <constraint firstItem="vB1-Vc-MDo" firstAttribute="leading" secondItem="oGT-60-dbw" secondAttribute="leading" constant="20" id="95j-9i-DUP"/>
+                            <constraint firstItem="bKy-K7-N48" firstAttribute="top" secondItem="rtI-ZN-NSQ" secondAttribute="bottom" constant="20" id="B9d-bp-xfz"/>
+                            <constraint firstItem="6oF-ar-Eaa" firstAttribute="leading" secondItem="oGT-60-dbw" secondAttribute="leading" constant="20" id="BqG-AM-QNt"/>
+                            <constraint firstItem="dIk-eE-tAF" firstAttribute="top" secondItem="ijX-CK-YxG" secondAttribute="bottom" constant="10" id="EZ3-Al-52O"/>
+                            <constraint firstItem="6oF-ar-Eaa" firstAttribute="top" secondItem="Ebf-bN-2if" secondAttribute="bottom" constant="20" id="Fqp-Mo-D2o"/>
+                            <constraint firstItem="oGT-60-dbw" firstAttribute="trailing" secondItem="6oF-ar-Eaa" secondAttribute="trailing" constant="20" id="J5X-hl-rE2"/>
+                            <constraint firstItem="Ebf-bN-2if" firstAttribute="top" secondItem="8cd-Pu-NgP" secondAttribute="bottom" constant="10" id="NfX-XG-kWc"/>
+                            <constraint firstItem="dIk-eE-tAF" firstAttribute="leading" secondItem="oGT-60-dbw" secondAttribute="leading" constant="20" id="Owu-BT-Svp"/>
+                            <constraint firstItem="oGT-60-dbw" firstAttribute="trailing" secondItem="vB1-Vc-MDo" secondAttribute="trailing" constant="20" id="StK-M5-WNH"/>
+                            <constraint firstItem="oGT-60-dbw" firstAttribute="trailing" secondItem="rtI-ZN-NSQ" secondAttribute="trailing" constant="20" id="Um9-kh-xg8"/>
+                            <constraint firstItem="Ebf-bN-2if" firstAttribute="leading" secondItem="oGT-60-dbw" secondAttribute="leading" constant="20" id="X3f-n9-e1y"/>
+                            <constraint firstItem="oGT-60-dbw" firstAttribute="trailing" secondItem="Ebf-bN-2if" secondAttribute="trailing" constant="20" id="ccv-7V-mR8"/>
+                            <constraint firstItem="ijX-CK-YxG" firstAttribute="top" secondItem="vB1-Vc-MDo" secondAttribute="bottom" constant="20" id="eaa-vS-nhG"/>
+                            <constraint firstItem="oGT-60-dbw" firstAttribute="trailing" secondItem="dIk-eE-tAF" secondAttribute="trailing" constant="20" id="fFh-RX-F0b"/>
+                            <constraint firstItem="8cd-Pu-NgP" firstAttribute="leading" secondItem="oGT-60-dbw" secondAttribute="leading" constant="20" id="fhx-D2-lLF"/>
+                            <constraint firstItem="rtI-ZN-NSQ" firstAttribute="leading" secondItem="oGT-60-dbw" secondAttribute="leading" constant="20" id="hsO-kY-IUl"/>
+                            <constraint firstItem="oGT-60-dbw" firstAttribute="trailing" secondItem="ijX-CK-YxG" secondAttribute="trailing" constant="20" id="juj-V5-vVz"/>
+                            <constraint firstItem="oGT-60-dbw" firstAttribute="trailing" secondItem="bKy-K7-N48" secondAttribute="trailing" id="o8a-rN-Qe1"/>
+                            <constraint firstItem="bKy-K7-N48" firstAttribute="leading" secondItem="oGT-60-dbw" secondAttribute="leading" id="omx-Wy-vTI"/>
+                            <constraint firstItem="oGT-60-dbw" firstAttribute="trailing" secondItem="8cd-Pu-NgP" secondAttribute="trailing" constant="20" id="rWS-E4-TbC"/>
+                            <constraint firstItem="rtI-ZN-NSQ" firstAttribute="top" secondItem="dIk-eE-tAF" secondAttribute="bottom" id="w1U-p3-59h"/>
+                            <constraint firstItem="vB1-Vc-MDo" firstAttribute="top" secondItem="oGT-60-dbw" secondAttribute="top" constant="30" id="zcg-DE-Nd7"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tips" id="sA7-oz-6B4">
                         <imageReference key="image" image="document.fill" catalog="system" symbolScale="large"/>
@@ -797,7 +915,9 @@
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="document.fill" catalog="system" width="115" height="128"/>
         <image name="dog.circle" catalog="system" width="128" height="123"/>
+        <image name="note.text" catalog="system" width="128" height="107"/>
         <image name="pawprint.fill" catalog="system" width="128" height="112"/>
+        <image name="questionmark.folder.fill" catalog="system" width="128" height="96"/>
         <image name="syringe" catalog="system" width="128" height="115"/>
         <image name="syringe.fill" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">
