@@ -357,6 +357,46 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bKy-K7-N48">
                                 <rect key="frame" x="0.0" y="280" width="393" height="333"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tipCell" rowHeight="120" id="YBO-nV-RNu">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YBO-nV-RNu" id="u3O-ac-BLI">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuantas veces al dia debe comer mi mascota?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6V-fw-4vB">
+                                                    <rect key="frame" x="36" y="19" width="321" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="eaF-Z9-7AI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Como maximo 5 veces, la digestion en un perro es importante." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M4S-pd-VOl">
+                                                    <rect key="frame" x="16" y="38" width="361" height="80"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="dbz-OG-VsS"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="M4S-pd-VOl" firstAttribute="top" secondItem="O6V-fw-4vB" secondAttribute="bottom" constant="4" id="KgX-1G-7XO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="O6V-fw-4vB" secondAttribute="trailing" constant="16" id="Rf9-eB-jNt"/>
+                                                <constraint firstItem="O6V-fw-4vB" firstAttribute="top" secondItem="u3O-ac-BLI" secondAttribute="topMargin" constant="8" id="Sae-qg-HUu"/>
+                                                <constraint firstItem="M4S-pd-VOl" firstAttribute="leading" secondItem="u3O-ac-BLI" secondAttribute="leading" constant="16" id="WAt-kj-JTS"/>
+                                                <constraint firstAttribute="trailing" secondItem="M4S-pd-VOl" secondAttribute="trailing" constant="16" id="aTh-jq-iPo"/>
+                                                <constraint firstAttribute="bottom" secondItem="M4S-pd-VOl" secondAttribute="bottom" constant="2" id="qtT-Kq-Urj"/>
+                                                <constraint firstItem="O6V-fw-4vB" firstAttribute="leading" secondItem="u3O-ac-BLI" secondAttribute="leadingMargin" constant="16" id="u8h-9H-Tda"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No encuentras tu pregunta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cd-Pu-NgP">
                                 <rect key="frame" x="20" y="623" width="353" height="40"/>
@@ -381,7 +421,7 @@
                                     <constraint firstAttribute="height" constant="40" id="ukG-Fb-lu8"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Enviar"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oGT-60-dbw"/>
