@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FF7DDA02DBF2854005B0A12 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 8FF7DD9F2DBF2854005B0A12 /* FSCalendar */; };
 		D35A99B72DBDA7EC00D5CE7E /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35A99B62DBDA7EC00D5CE7E /* RegistroViewController.swift */; };
 		D3A1C6A32DBD72E1007A934D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A1C6A22DBD72E1007A934D /* AppDelegate.swift */; };
 		D3A1C6A52DBD72E1007A934D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A1C6A42DBD72E1007A934D /* SceneDelegate.swift */; };
@@ -68,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF7DDA02DBF2854005B0A12 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +235,9 @@
 				Base,
 			);
 			mainGroup = D3A1C6962DBD72E1007A934D;
+			packageReferences = (
+				8FF7DD9E2DBF27FA005B0A12 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = D3A1C6A02DBD72E1007A934D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -620,6 +625,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FF7DD9E2DBF27FA005B0A12 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FF7DD9F2DBF2854005B0A12 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FF7DD9E2DBF27FA005B0A12 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D3E138482DBDFBED004959B8 /* CiberVet.xcdatamodeld */ = {
