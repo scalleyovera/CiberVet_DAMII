@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,10 @@
 		8FD8DFDC2DC5EC0A005921D4 /* RegisterPetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD8DFDB2DC5EC0A005921D4 /* RegisterPetViewController.xib */; };
 		8FD8DFDD2DC5EC0A005921D4 /* RegisterPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8DFDA2DC5EC0A005921D4 /* RegisterPetViewController.swift */; };
 		8FF7DDA02DBF2854005B0A12 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 8FF7DD9F2DBF2854005B0A12 /* FSCalendar */; };
+		8FFB65612DC5F24B0009C368 /* SocialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FFB65602DC5F24B0009C368 /* SocialViewController.xib */; };
+		8FFB65622DC5F24B0009C368 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB655F2DC5F24B0009C368 /* SocialViewController.swift */; };
+		8FFB65692DC5FAFF0009C368 /* PetFriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB65682DC5FAFF0009C368 /* PetFriendTableViewCell.swift */; };
+		8FFB656B2DC6025A0009C368 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB656A2DC6025A0009C368 /* API.swift */; };
 		D35A99B72DBDA7EC00D5CE7E /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35A99B62DBDA7EC00D5CE7E /* RegistroViewController.swift */; };
 		D3A1C6A32DBD72E1007A934D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A1C6A22DBD72E1007A934D /* AppDelegate.swift */; };
 		D3A1C6A52DBD72E1007A934D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A1C6A42DBD72E1007A934D /* SceneDelegate.swift */; };
@@ -59,6 +63,10 @@
 		8FD8DFD72DC5EB48005921D4 /* TipsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsViewController.xib; sourceTree = "<group>"; };
 		8FD8DFDA2DC5EC0A005921D4 /* RegisterPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPetViewController.swift; sourceTree = "<group>"; };
 		8FD8DFDB2DC5EC0A005921D4 /* RegisterPetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterPetViewController.xib; sourceTree = "<group>"; };
+		8FFB655F2DC5F24B0009C368 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		8FFB65602DC5F24B0009C368 /* SocialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialViewController.xib; sourceTree = "<group>"; };
+		8FFB65682DC5FAFF0009C368 /* PetFriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFriendTableViewCell.swift; sourceTree = "<group>"; };
+		8FFB656A2DC6025A0009C368 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		D35A99B62DBDA7EC00D5CE7E /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		D3A1C69F2DBD72E1007A934D /* CiberVet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiberVet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A1C6A22DBD72E1007A934D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +87,10 @@
 		D3E1384B2DBDFF0B004959B8 /* MascotaCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MascotaCD+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D3E1384C2DBDFF0B004959B8 /* MascotaCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MascotaCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8FFB65632DC5F6E70009C368 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D3A1C69C2DBD72E1007A934D /* Frameworks */ = {
@@ -109,6 +121,7 @@
 		D3A1C6962DBD72E1007A934D = {
 			isa = PBXGroup;
 			children = (
+				8FFB65682DC5FAFF0009C368 /* PetFriendTableViewCell.swift */,
 				D3E1384B2DBDFF0B004959B8 /* MascotaCD+CoreDataClass.swift */,
 				D3E1384C2DBDFF0B004959B8 /* MascotaCD+CoreDataProperties.swift */,
 				D3A1C6A12DBD72E1007A934D /* CiberVet */,
@@ -131,6 +144,7 @@
 		D3A1C6A12DBD72E1007A934D /* CiberVet */ = {
 			isa = PBXGroup;
 			children = (
+				8FFB65632DC5F6E70009C368 /* Models */,
 				D3A1C6A22DBD72E1007A934D /* AppDelegate.swift */,
 				D3A1C6A42DBD72E1007A934D /* SceneDelegate.swift */,
 				D3A1C6A62DBD72E1007A934D /* ViewController.swift */,
@@ -142,6 +156,9 @@
 				D3A1C6B02DBD72E5007A934D /* Info.plist */,
 				D35A99B62DBDA7EC00D5CE7E /* RegistroViewController.swift */,
 				D3E138442DBDE3F0004959B8 /* HomeViewController.swift */,
+				8FFB655F2DC5F24B0009C368 /* SocialViewController.swift */,
+				8FFB656A2DC6025A0009C368 /* API.swift */,
+				8FFB65602DC5F24B0009C368 /* SocialViewController.xib */,
 				D3E138462DBDF418004959B8 /* MascotaTableViewCell.swift */,
 				D3E138482DBDFBED004959B8 /* CiberVet.xcdatamodeld */,
 				8FD8DFD22DC5EB01005921D4 /* SaludViewController.swift */,
@@ -185,6 +202,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8FFB65632DC5F6E70009C368 /* Models */,
 			);
 			name = CiberVet;
 			productName = CiberVet;
@@ -281,6 +301,7 @@
 				8FD8DFD82DC5EB48005921D4 /* TipsViewController.xib in Resources */,
 				8FD8DFD42DC5EB01005921D4 /* SaludViewController.xib in Resources */,
 				D3A1C6AF2DBD72E5007A934D /* LaunchScreen.storyboard in Resources */,
+				8FFB65612DC5F24B0009C368 /* SocialViewController.xib in Resources */,
 				D3A1C6AC2DBD72E5007A934D /* Assets.xcassets in Resources */,
 				8FD8DFDC2DC5EC0A005921D4 /* RegisterPetViewController.xib in Resources */,
 				8F3306692DBF4A5D006EFF1A /* ControlMascotaViewController.xib in Resources */,
@@ -318,9 +339,12 @@
 				D3A1C6A72DBD72E1007A934D /* ViewController.swift in Sources */,
 				D3E1384D2DBDFF0B004959B8 /* MascotaCD+CoreDataClass.swift in Sources */,
 				D35A99B72DBDA7EC00D5CE7E /* RegistroViewController.swift in Sources */,
+				8FFB65622DC5F24B0009C368 /* SocialViewController.swift in Sources */,
+				8FFB65692DC5FAFF0009C368 /* PetFriendTableViewCell.swift in Sources */,
 				D3A1C6A32DBD72E1007A934D /* AppDelegate.swift in Sources */,
 				D3A1C6A52DBD72E1007A934D /* SceneDelegate.swift in Sources */,
 				D3E1384A2DBDFBED004959B8 /* CiberVet.xcdatamodeld in Sources */,
+				8FFB656B2DC6025A0009C368 /* API.swift in Sources */,
 				8FD8DFDD2DC5EC0A005921D4 /* RegisterPetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
