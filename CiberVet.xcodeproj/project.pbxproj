@@ -23,6 +23,13 @@
 		8FFB65622DC5F24B0009C368 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB655F2DC5F24B0009C368 /* SocialViewController.swift */; };
 		8FFB65692DC5FAFF0009C368 /* PetFriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB65682DC5FAFF0009C368 /* PetFriendTableViewCell.swift */; };
 		8FFB656B2DC6025A0009C368 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB656A2DC6025A0009C368 /* API.swift */; };
+		8FFBB4212DC7AF9F00DCB34B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FFBB4202DC7AF9F00DCB34B /* GoogleService-Info.plist */; };
+		8FFBB4242DC7B1EC00DCB34B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8FFBB4232DC7B1EC00DCB34B /* FirebaseAuth */; };
+		8FFBB4262DC7B1EC00DCB34B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8FFBB4252DC7B1EC00DCB34B /* FirebaseDatabase */; };
+		8FFBB4282DC7B1EC00DCB34B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8FFBB4272DC7B1EC00DCB34B /* FirebaseFirestore */; };
+		8FFBB42A2DC7B1EC00DCB34B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8FFBB4292DC7B1EC00DCB34B /* FirebaseStorage */; };
+		8FFBB42D2DC7C72400DCB34B /* TestLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFBB42B2DC7C72400DCB34B /* TestLoginViewController.swift */; };
+		8FFBB42E2DC7C72400DCB34B /* TestLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FFBB42C2DC7C72400DCB34B /* TestLoginViewController.xib */; };
 		D35A99B72DBDA7EC00D5CE7E /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35A99B62DBDA7EC00D5CE7E /* RegistroViewController.swift */; };
 		D3A1C6A32DBD72E1007A934D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A1C6A22DBD72E1007A934D /* AppDelegate.swift */; };
 		D3A1C6A52DBD72E1007A934D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A1C6A42DBD72E1007A934D /* SceneDelegate.swift */; };
@@ -73,6 +80,9 @@
 		8FFB65602DC5F24B0009C368 /* SocialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialViewController.xib; sourceTree = "<group>"; };
 		8FFB65682DC5FAFF0009C368 /* PetFriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFriendTableViewCell.swift; sourceTree = "<group>"; };
 		8FFB656A2DC6025A0009C368 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8FFBB4202DC7AF9F00DCB34B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8FFBB42B2DC7C72400DCB34B /* TestLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLoginViewController.swift; sourceTree = "<group>"; };
+		8FFBB42C2DC7C72400DCB34B /* TestLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestLoginViewController.xib; sourceTree = "<group>"; };
 		D35A99B62DBDA7EC00D5CE7E /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		D3A1C69F2DBD72E1007A934D /* CiberVet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiberVet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A1C6A22DBD72E1007A934D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +113,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FFBB4262DC7B1EC00DCB34B /* FirebaseDatabase in Frameworks */,
+				8FFBB4282DC7B1EC00DCB34B /* FirebaseFirestore in Frameworks */,
 				8FF7DDA02DBF2854005B0A12 /* FSCalendar in Frameworks */,
+				8FFBB42A2DC7B1EC00DCB34B /* FirebaseStorage in Frameworks */,
+				8FFBB4242DC7B1EC00DCB34B /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +169,8 @@
 				D3A1C6A42DBD72E1007A934D /* SceneDelegate.swift */,
 				D3A1C6A62DBD72E1007A934D /* ViewController.swift */,
 				D3A1C6A82DBD72E1007A934D /* Main.storyboard */,
+				8FFBB42B2DC7C72400DCB34B /* TestLoginViewController.swift */,
+				8FFBB42C2DC7C72400DCB34B /* TestLoginViewController.xib */,
 				8F3306672DBF4A5D006EFF1A /* ControlMascotaViewController.swift */,
 				8FDCF6662DC749BA00FCF954 /* ActividadTableViewCell.swift */,
 				8FDCF6672DC749BA00FCF954 /* ActividadTableViewCell.xib */,
@@ -175,6 +191,7 @@
 				8FDCF66A2DC7560900FCF954 /* QuestionTableViewCell.swift */,
 				8FD8DFD72DC5EB48005921D4 /* TipsViewController.xib */,
 				8FD8DFDA2DC5EC0A005921D4 /* RegisterPetViewController.swift */,
+				8FFBB4202DC7AF9F00DCB34B /* GoogleService-Info.plist */,
 				8FD8DFDB2DC5EC0A005921D4 /* RegisterPetViewController.xib */,
 			);
 			path = CiberVet;
@@ -290,6 +307,7 @@
 			mainGroup = D3A1C6962DBD72E1007A934D;
 			packageReferences = (
 				8FF7DD9E2DBF27FA005B0A12 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				8FFBB4222DC7B1EC00DCB34B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = D3A1C6A02DBD72E1007A934D /* Products */;
 			projectDirPath = "";
@@ -314,6 +332,8 @@
 				D3A1C6AC2DBD72E5007A934D /* Assets.xcassets in Resources */,
 				8FD8DFDC2DC5EC0A005921D4 /* RegisterPetViewController.xib in Resources */,
 				8F3306692DBF4A5D006EFF1A /* ControlMascotaViewController.xib in Resources */,
+				8FFBB42E2DC7C72400DCB34B /* TestLoginViewController.xib in Resources */,
+				8FFBB4212DC7AF9F00DCB34B /* GoogleService-Info.plist in Resources */,
 				D3A1C6AA2DBD72E1007A934D /* Main.storyboard in Resources */,
 				8FDCF6682DC749BA00FCF954 /* ActividadTableViewCell.xib in Resources */,
 			);
@@ -351,6 +371,7 @@
 				D3E1384D2DBDFF0B004959B8 /* MascotaCD+CoreDataClass.swift in Sources */,
 				D35A99B72DBDA7EC00D5CE7E /* RegistroViewController.swift in Sources */,
 				8FFB65622DC5F24B0009C368 /* SocialViewController.swift in Sources */,
+				8FFBB42D2DC7C72400DCB34B /* TestLoginViewController.swift in Sources */,
 				8FFB65692DC5FAFF0009C368 /* PetFriendTableViewCell.swift in Sources */,
 				D3A1C6A32DBD72E1007A934D /* AppDelegate.swift in Sources */,
 				D3A1C6A52DBD72E1007A934D /* SceneDelegate.swift in Sources */,
@@ -701,6 +722,14 @@
 				minimumVersion = 2.8.4;
 			};
 		};
+		8FFBB4222DC7B1EC00DCB34B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -708,6 +737,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8FF7DD9E2DBF27FA005B0A12 /* XCRemoteSwiftPackageReference "FSCalendar" */;
 			productName = FSCalendar;
+		};
+		8FFBB4232DC7B1EC00DCB34B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FFBB4222DC7B1EC00DCB34B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8FFBB4252DC7B1EC00DCB34B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FFBB4222DC7B1EC00DCB34B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8FFBB4272DC7B1EC00DCB34B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FFBB4222DC7B1EC00DCB34B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8FFBB4292DC7B1EC00DCB34B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FFBB4222DC7B1EC00DCB34B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 

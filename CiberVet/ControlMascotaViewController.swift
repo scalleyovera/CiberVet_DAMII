@@ -31,9 +31,14 @@ class ControlMascotaViewController: UIViewController {
     }
 
     func getActivitiesFromApi(formattedDate: String) {
-        print("FECHA RECIBIDA \(formattedDate) para el API")
-        let urlString = "\(PetAPI.url)/listarCitasByFecha?fecha=\(formattedDate)"
+        var extensionApi = "listarCitasByFecha"
+        if formattedDate != ApiConfig.correctDate {
+            extensionApi = ApiConfig.defaultExtension
+        }
+        
+        let urlString = "\(PetAPI.url)/\(extensionApi)?fecha=\(formattedDate)"
         guard let url = URL(string: urlString) else { return }
+        print("formated date: \(formattedDate) y url: \(urlString)")
 
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
