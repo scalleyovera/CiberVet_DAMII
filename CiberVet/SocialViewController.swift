@@ -28,7 +28,7 @@ class SocialViewController: UIViewController {
     }
     
     func loadAllPetsToMeet() {
-        let urlString = "\(PetAPI.url)/listarGenero"
+        let urlString = "\(PetAPI.url)/listarPetFriends"
         guard let url = URL(string: urlString) else { return }
         
         var request = URLRequest(url: url)
@@ -88,6 +88,7 @@ extension SocialViewController: UITableViewDataSource {
         cell.petDetailsLabel.text = "\(petFriend.nombre) \(petFriend.fechaUnion)"
         cell.petFriendImage.image = UIImage(named: "placeholder") // Imagen temporal opcional
 
+        
         if let url = URL(string: petFriend.imagen) {
             URLSession.shared.dataTask(with: url) { data, _, error in
                 if let data = data, let image = UIImage(data: data) {

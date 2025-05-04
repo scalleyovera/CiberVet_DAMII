@@ -16,6 +16,7 @@ class PetFriendTableViewCell: UITableViewCell {
         super.awakeFromNib()
         setupViews()
     }
+    
 
     private func setupViews() {
         petDetailsLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -29,20 +30,18 @@ class PetFriendTableViewCell: UITableViewCell {
             petDetailsLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             petDetailsLabel.trailingAnchor.constraint(lessThanOrEqualTo: meetButton.leadingAnchor, constant: -8),
 
-
             meetButton.centerYAnchor.constraint(equalTo: petDetailsLabel.centerYAnchor),
             meetButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
 
-        
             petFriendImage.topAnchor.constraint(equalTo: petDetailsLabel.bottomAnchor, constant: 12),
             petFriendImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             petFriendImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             petFriendImage.heightAnchor.constraint(equalToConstant: 200),
-            petFriendImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12)
+            petFriendImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
         ])
+
     }
 
-  
     @IBAction func meetButtonTapped(_ sender: UIButton) {
         delegate?.didTapMeetFriend()
     }

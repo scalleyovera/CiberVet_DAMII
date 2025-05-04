@@ -9,6 +9,13 @@ import UIKit
 
 class ActividadTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var horaLabel: UILabel!
+    
+    @IBOutlet weak var lugarLabel: UILabel!
+    
+    @IBOutlet weak var actividadLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

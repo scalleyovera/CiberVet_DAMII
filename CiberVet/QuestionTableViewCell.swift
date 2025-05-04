@@ -9,6 +9,11 @@ import UIKit
 
 class QuestionTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var questionText: UITextView!
+    
+    @IBOutlet weak var answerText: UITextView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

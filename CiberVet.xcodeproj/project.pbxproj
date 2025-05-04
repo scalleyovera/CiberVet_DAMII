@@ -15,6 +15,9 @@
 		8FD8DFD92DC5EB48005921D4 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8DFD62DC5EB48005921D4 /* TipsViewController.swift */; };
 		8FD8DFDC2DC5EC0A005921D4 /* RegisterPetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD8DFDB2DC5EC0A005921D4 /* RegisterPetViewController.xib */; };
 		8FD8DFDD2DC5EC0A005921D4 /* RegisterPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD8DFDA2DC5EC0A005921D4 /* RegisterPetViewController.swift */; };
+		8FDCF6682DC749BA00FCF954 /* ActividadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDCF6672DC749BA00FCF954 /* ActividadTableViewCell.xib */; };
+		8FDCF6692DC749BA00FCF954 /* ActividadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDCF6662DC749BA00FCF954 /* ActividadTableViewCell.swift */; };
+		8FDCF66B2DC7560900FCF954 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDCF66A2DC7560900FCF954 /* QuestionTableViewCell.swift */; };
 		8FF7DDA02DBF2854005B0A12 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 8FF7DD9F2DBF2854005B0A12 /* FSCalendar */; };
 		8FFB65612DC5F24B0009C368 /* SocialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FFB65602DC5F24B0009C368 /* SocialViewController.xib */; };
 		8FFB65622DC5F24B0009C368 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB655F2DC5F24B0009C368 /* SocialViewController.swift */; };
@@ -63,6 +66,9 @@
 		8FD8DFD72DC5EB48005921D4 /* TipsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipsViewController.xib; sourceTree = "<group>"; };
 		8FD8DFDA2DC5EC0A005921D4 /* RegisterPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPetViewController.swift; sourceTree = "<group>"; };
 		8FD8DFDB2DC5EC0A005921D4 /* RegisterPetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterPetViewController.xib; sourceTree = "<group>"; };
+		8FDCF6662DC749BA00FCF954 /* ActividadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActividadTableViewCell.swift; sourceTree = "<group>"; };
+		8FDCF6672DC749BA00FCF954 /* ActividadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActividadTableViewCell.xib; sourceTree = "<group>"; };
+		8FDCF66A2DC7560900FCF954 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		8FFB655F2DC5F24B0009C368 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		8FFB65602DC5F24B0009C368 /* SocialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialViewController.xib; sourceTree = "<group>"; };
 		8FFB65682DC5FAFF0009C368 /* PetFriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFriendTableViewCell.swift; sourceTree = "<group>"; };
@@ -150,6 +156,8 @@
 				D3A1C6A62DBD72E1007A934D /* ViewController.swift */,
 				D3A1C6A82DBD72E1007A934D /* Main.storyboard */,
 				8F3306672DBF4A5D006EFF1A /* ControlMascotaViewController.swift */,
+				8FDCF6662DC749BA00FCF954 /* ActividadTableViewCell.swift */,
+				8FDCF6672DC749BA00FCF954 /* ActividadTableViewCell.xib */,
 				8F3306682DBF4A5D006EFF1A /* ControlMascotaViewController.xib */,
 				D3A1C6AB2DBD72E5007A934D /* Assets.xcassets */,
 				D3A1C6AD2DBD72E5007A934D /* LaunchScreen.storyboard */,
@@ -164,6 +172,7 @@
 				8FD8DFD22DC5EB01005921D4 /* SaludViewController.swift */,
 				8FD8DFD32DC5EB01005921D4 /* SaludViewController.xib */,
 				8FD8DFD62DC5EB48005921D4 /* TipsViewController.swift */,
+				8FDCF66A2DC7560900FCF954 /* QuestionTableViewCell.swift */,
 				8FD8DFD72DC5EB48005921D4 /* TipsViewController.xib */,
 				8FD8DFDA2DC5EC0A005921D4 /* RegisterPetViewController.swift */,
 				8FD8DFDB2DC5EC0A005921D4 /* RegisterPetViewController.xib */,
@@ -306,6 +315,7 @@
 				8FD8DFDC2DC5EC0A005921D4 /* RegisterPetViewController.xib in Resources */,
 				8F3306692DBF4A5D006EFF1A /* ControlMascotaViewController.xib in Resources */,
 				D3A1C6AA2DBD72E1007A934D /* Main.storyboard in Resources */,
+				8FDCF6682DC749BA00FCF954 /* ActividadTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +346,7 @@
 				D3E1384E2DBDFF0B004959B8 /* MascotaCD+CoreDataProperties.swift in Sources */,
 				8FD8DFD52DC5EB01005921D4 /* SaludViewController.swift in Sources */,
 				D3E138452DBDE3F0004959B8 /* HomeViewController.swift in Sources */,
+				8FDCF66B2DC7560900FCF954 /* QuestionTableViewCell.swift in Sources */,
 				D3A1C6A72DBD72E1007A934D /* ViewController.swift in Sources */,
 				D3E1384D2DBDFF0B004959B8 /* MascotaCD+CoreDataClass.swift in Sources */,
 				D35A99B72DBDA7EC00D5CE7E /* RegistroViewController.swift in Sources */,
@@ -343,6 +354,7 @@
 				8FFB65692DC5FAFF0009C368 /* PetFriendTableViewCell.swift in Sources */,
 				D3A1C6A32DBD72E1007A934D /* AppDelegate.swift in Sources */,
 				D3A1C6A52DBD72E1007A934D /* SceneDelegate.swift in Sources */,
+				8FDCF6692DC749BA00FCF954 /* ActividadTableViewCell.swift in Sources */,
 				D3E1384A2DBDFBED004959B8 /* CiberVet.xcdatamodeld in Sources */,
 				8FFB656B2DC6025A0009C368 /* API.swift in Sources */,
 				8FD8DFDD2DC5EC0A005921D4 /* RegisterPetViewController.swift in Sources */,

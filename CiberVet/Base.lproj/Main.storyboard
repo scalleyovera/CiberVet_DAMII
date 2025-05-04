@@ -220,7 +220,7 @@
                                             <constraint firstAttribute="height" constant="40" id="Duf-yx-RSO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.42851803685697543" green="0.6152389258295976" blue="0.83942382504241642" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -286,10 +286,10 @@
             </objects>
             <point key="canvasLocation" x="20.610687022900763" y="4.9295774647887329"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Pet View Controller-->
         <scene sceneID="TTK-3n-HzM">
             <objects>
-                <viewController id="1Dk-pP-tdp" sceneMemberID="viewController">
+                <viewController id="1Dk-pP-tdp" customClass="RegisterPetViewController" customModule="CiberVet" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2f6-vL-keV">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,6 +352,9 @@
                                             <segment title="Macho"/>
                                             <segment title="Hembra"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="genderOptions:" destination="NdG-5x-RaH" eventType="valueChanged" id="aOm-In-0EV"/>
+                                        </connections>
                                     </segmentedControl>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="figure.stand.dress" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FZ0-ze-r4r">
                                         <rect key="frame" x="233" y="-0.3333333333333357" width="40" height="40.333333333333336"/>
@@ -386,6 +389,9 @@
                                     </imageView>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="PWN-zj-bQ4">
                                         <rect key="frame" x="40" y="0.0" width="273" height="40"/>
+                                        <connections>
+                                            <action selector="fechaInscripcionDatePicker:" destination="NdG-5x-RaH" eventType="valueChanged" id="O3H-5m-p0d"/>
+                                        </connections>
                                     </datePicker>
                                 </subviews>
                                 <constraints>
@@ -399,6 +405,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Registrar"/>
+                                <connections>
+                                    <action selector="registerTapped:" destination="1Dk-pP-tdp" eventType="touchUpInside" id="iah-K4-d3X"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joh-Hd-9hg">
                                 <rect key="frame" x="20" y="20" width="30" height="30"/>
@@ -409,7 +418,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="arrowshape.turn.up.backward" catalog="system"/>
                                 <connections>
-                                    <action selector="returnTapped:" destination="NdG-5x-RaH" eventType="touchUpInside" id="eaC-nT-L07"/>
+                                    <action selector="volverTapped:" destination="NdG-5x-RaH" eventType="touchUpInside" id="CGn-9I-lR6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -445,6 +454,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nSA-s4-aAP"/>
+                    <connections>
+                        <outlet property="genderSegmentControl" destination="zeR-A6-jlw" id="pSm-RL-T13"/>
+                        <outlet property="inscriptionDatePicker" destination="PWN-zj-bQ4" id="anI-WP-D8b"/>
+                        <outlet property="nameTextField" destination="8wf-8Q-oZZ" id="S8i-0y-WHZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gdd-pV-KwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="NdG-5x-RaH" userLabel="Exit" sceneMemberID="exit"/>
@@ -523,27 +537,28 @@
                                 <rect key="frame" x="0.0" y="280" width="393" height="333"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tipCell" rowHeight="120" id="YBO-nV-RNu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tipCell" rowHeight="120" id="YBO-nV-RNu" customClass="QuestionTableViewCell" customModule="CiberVet">
                                         <rect key="frame" x="0.0" y="50" width="393" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YBO-nV-RNu" id="u3O-ac-BLI">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuantas veces al dia debe comer mi mascota?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6V-fw-4vB">
-                                                    <rect key="frame" x="36" y="19" width="321" height="15"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="15" id="eaF-Z9-7AI"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Como maximo 5 veces, la digestion en un perro es importante." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M4S-pd-VOl">
-                                                    <rect key="frame" x="16" y="38" width="361" height="80"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Cuantas veces al dia debe comer mis mascota?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xkV-uk-OA9">
+                                                    <rect key="frame" x="16" y="8" width="361" height="40"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="dbz-OG-VsS"/>
+                                                        <constraint firstAttribute="height" constant="40" id="cIL-7Q-1FS"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Como maximo 5 veces, la digestion en un perro es importante." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M4S-pd-VOl">
+                                                    <rect key="frame" x="16" y="56" width="361" height="56"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="yGu-sL-WNb"/>
                                                     </constraints>
                                                     <color key="textColor" systemColor="labelColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -551,15 +566,19 @@
                                                 </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="M4S-pd-VOl" firstAttribute="top" secondItem="O6V-fw-4vB" secondAttribute="bottom" constant="4" id="KgX-1G-7XO"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="O6V-fw-4vB" secondAttribute="trailing" constant="16" id="Rf9-eB-jNt"/>
-                                                <constraint firstItem="O6V-fw-4vB" firstAttribute="top" secondItem="u3O-ac-BLI" secondAttribute="topMargin" constant="8" id="Sae-qg-HUu"/>
-                                                <constraint firstItem="M4S-pd-VOl" firstAttribute="leading" secondItem="u3O-ac-BLI" secondAttribute="leading" constant="16" id="WAt-kj-JTS"/>
-                                                <constraint firstAttribute="trailing" secondItem="M4S-pd-VOl" secondAttribute="trailing" constant="16" id="aTh-jq-iPo"/>
-                                                <constraint firstAttribute="bottom" secondItem="M4S-pd-VOl" secondAttribute="bottom" constant="2" id="qtT-Kq-Urj"/>
-                                                <constraint firstItem="O6V-fw-4vB" firstAttribute="leading" secondItem="u3O-ac-BLI" secondAttribute="leadingMargin" constant="16" id="u8h-9H-Tda"/>
+                                                <constraint firstAttribute="trailing" secondItem="M4S-pd-VOl" secondAttribute="trailing" constant="16" id="4Xb-KC-f79"/>
+                                                <constraint firstItem="M4S-pd-VOl" firstAttribute="top" secondItem="xkV-uk-OA9" secondAttribute="bottom" constant="8" id="6el-cW-kez"/>
+                                                <constraint firstItem="xkV-uk-OA9" firstAttribute="top" secondItem="u3O-ac-BLI" secondAttribute="top" constant="8" id="Hda-Wn-1Wj"/>
+                                                <constraint firstItem="M4S-pd-VOl" firstAttribute="leading" secondItem="u3O-ac-BLI" secondAttribute="leading" constant="16" id="I9x-a9-hmz"/>
+                                                <constraint firstAttribute="trailing" secondItem="xkV-uk-OA9" secondAttribute="trailing" constant="16" id="Iww-ZM-7un"/>
+                                                <constraint firstItem="xkV-uk-OA9" firstAttribute="leading" secondItem="u3O-ac-BLI" secondAttribute="leading" constant="16" id="ScH-mh-yG8"/>
+                                                <constraint firstAttribute="bottom" secondItem="M4S-pd-VOl" secondAttribute="bottom" constant="8" id="VQ4-sw-yX3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="answerText" destination="M4S-pd-VOl" id="hmZ-3e-SrM"/>
+                                            <outlet property="questionText" destination="xkV-uk-OA9" id="5zi-Lc-V25"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -587,6 +606,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Enviar"/>
+                                <connections>
+                                    <action selector="sendQuestionTapped:" destination="hZv-gl-JWA" eventType="touchUpInside" id="Rm8-gW-4HT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oGT-60-dbw"/>
@@ -623,6 +645,10 @@
                         <imageReference key="image" image="document.fill" catalog="system" symbolScale="large"/>
                         <imageReference key="selectedImage" image="document.fill" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="newQuestionTextField" destination="Ebf-bN-2if" id="eXU-tF-iYW"/>
+                        <outlet property="tipsTable" destination="bKy-K7-N48" id="OhZ-oJ-r1u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bq-oO-omN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -736,6 +762,11 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DqQ-fp-xAO">
                                                     <rect key="frame" x="36" y="101" width="291" height="200"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1VS-qP-1Tg">
                                                     <rect key="frame" x="247" y="31" width="80" height="40"/>
@@ -837,7 +868,7 @@
                                         <rect key="frame" x="0.0" y="90" width="393" height="323"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="actividadCell" rowHeight="100" id="Xiv-pQ-bfB">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="actividadCell" rowHeight="100" id="Xiv-pQ-bfB" customClass="ActividadTableViewCell" customModule="CiberVet">
                                                 <rect key="frame" x="0.0" y="50" width="393" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xiv-pQ-bfB" id="oRC-gj-eZW">
@@ -849,7 +880,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="Sw6-e1-hNH"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -882,6 +913,11 @@
                                                         <constraint firstAttribute="trailingMargin" secondItem="1WW-sI-P0o" secondAttribute="trailing" constant="16" id="v8d-XN-wnZ"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="actividadLabel" destination="jzY-ZK-w7H" id="pmF-Nl-tmF"/>
+                                                    <outlet property="horaLabel" destination="1WW-sI-P0o" id="5DK-Zr-eMB"/>
+                                                    <outlet property="lugarLabel" destination="Bqb-Qp-DbG" id="0bK-PK-S5u"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -937,6 +973,8 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="calendar" destination="te2-a7-1BQ" id="bUi-Pd-vN6"/>
+                        <outlet property="nonActivitiesLabel" destination="fwW-Kj-zxI" id="0q5-gL-Apy"/>
+                        <outlet property="tablaActividades" destination="HhR-BJ-p5G" id="Qeb-Ux-1E1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWz-cM-eqX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

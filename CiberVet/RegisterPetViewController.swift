@@ -9,6 +9,16 @@ import UIKit
 
 class RegisterPetViewController: UIViewController {
 
+  
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    
+    @IBOutlet weak var genderSegmentControl: UISegmentedControl!
+    
+    
+    @IBOutlet weak var inscriptionDatePicker: UIDatePicker!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,17 +26,29 @@ class RegisterPetViewController: UIViewController {
     }
 
 
-    @IBAction func returnedTapped(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func registerTapped(_ sender: UIButton) {
+        guard let name = nameTextField.text, !name.trimmingCharacters(in: .whitespaces).isEmpty else {
+            let alertError = UIAlertController(title: "Ups!", message: "Por favor complete todos los campos.", preferredStyle: .alert)
+            alertError.addAction(UIAlertAction(title: "Aceptar", style: .cancel))
+            present(alertError, animated: true)
+            return
+        }
+        
+        let genderIndex = genderSegmentControl.selectedSegmentIndex
+        let date = inscriptionDatePicker.date
+        
+        let actionSuccess = UIAlertController(
+            title: "¡Felicidades!",
+            message: "\(name) ha sido registrado exitosamente.",
+            preferredStyle: .alert
+        )
+        
+        actionSuccess.addAction(UIAlertAction(title: "Aceptar", style: .default) { _ in
+            self.dismiss(animated: true)
+        })
+        
+        present(actionSuccess, animated: true)
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
